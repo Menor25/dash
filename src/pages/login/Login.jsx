@@ -22,7 +22,7 @@ export default function Login() {
         const body = JSON.stringify({email, password});
 
         try{
-            const res = await axios.post('user/login', body, config);
+            const res = await axios.post('/user/login', body, config);
             localStorage.setItem("user-info", res.data.accessToken);
             console.log(res.data)
             return <Redirect to="/" />;
