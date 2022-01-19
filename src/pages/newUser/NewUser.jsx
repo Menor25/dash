@@ -15,7 +15,7 @@ export default function NewUser(props) {
         const password = event.target.password.value;
 
         const data = {email, firstName, lastName, phone, username, password};
-        const url = '/user/create';
+        const url = 'https://employee-proj.herokuapp.com/user/create';
 
         axios.post(url, data)
         .then((response) => {

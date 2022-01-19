@@ -14,7 +14,7 @@ export default function Payroll(id) {
         const month = event.target.month.value;
 
         const data = {amount, description, firstName, lastName, month};
-        const url = `/payroll/create/${id}`;
+        const url = `https://employee-proj.herokuapp.com/payroll/create/${id}`;
 
         axios.post(url, data)
         .then((response) => {

@@ -10,7 +10,7 @@ export default function Activate(props) {
         const id = event.target.id.value;
 
         const data = {id};
-        const url = `/user/activate/${id}`;
+        const url = `https://employee-proj.herokuapp.com/user/activate/${id}`;
 
         axios.post(url, data)
         .then((response) => {

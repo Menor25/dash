@@ -13,7 +13,7 @@ export default function Expense() {
         const title = event.target.title.value;
 
         const data = {id, amount, description, title};
-        const url = `/expense/create/${id}`;
+        const url = `https://employee-proj.herokuapp.com/expense/create/${id}`;
 
         axios.post(url, data)
         .then((response) => {

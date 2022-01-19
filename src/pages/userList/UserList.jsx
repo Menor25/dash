@@ -11,7 +11,7 @@ function UserList() {
     const [userData, setData] = useState([]);
 
     const getData = () => {
-        axios.get('/user/all')
+        axios.get('https://employee-proj.herokuapp.com/user/all')
         .then((result) =>{
             console.log(result);
             const myData = result.data;
